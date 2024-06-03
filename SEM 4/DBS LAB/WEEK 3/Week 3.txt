@@ -1,0 +1,200 @@
+REM   Script: WEEK 3
+REM   DBS LAB WEEK 3 CODES
+
+3.0
+
+insert all 
+into EMP values (106, 'Prasad', 'PHD', 9000000001, 'prasad@digisol.com', 'CEO', 300000, NULL) 
+into EMP values (120, 'Bhaskar', 'MTECH', 9000000011, 'bhaskar@digisol.com', 'PROJECT DIRECTOR', 150000, 106) 
+into EMP values (112, 'Vijay', 'BTECH', 9000000009, 'vijay@digisol.com', 'PROJECT MANAGER', 100000, 106) 
+into EMP values (101, 'Ravi', 'MTECH', 9000000008, 'ravi@digisol.com', 'PROJECT LEADER', 150000, 120) 
+into EMP values (116, 'Raj', 'MSC', 9000000012, 'raj@digisol.com', 'PROJECT LEADER', 150000, 112) 
+into EMP values (118, 'Ajay', 'BTECH', 9000000010, 'ajay@digisol.com', 'TECHNICAL HEAD', 200000, 120) 
+into EMP values (102, 'Rakesh', 'MTECH', 9000000002, 'rakesh@digisol.com', 'DEVELOPER', 100000, 101) 
+into EMP values (108, 'Rakesh', 'MTECH', 9000000003, 'rakesh1@digisol.com', 'DEVELOPER', 100000, 116) 
+into EMP values (109, 'Arya', 'MCA', 9000000004, 'arya@digisol.com', 'DEVELOPER', 100000, 101) 
+into EMP values (110, 'Yash', 'BTECH', 9000000005, 'yash@digisol.com', 'DEVELOPER', 100000, 116) 
+into EMP values (111, 'Raj', 'BTECH', 9000000006, 'raj123@digisol.com', 'DEVELOPER', 100000, 101) 
+into EMP values (100, 'Rajesh', 'BTECH', 9000000007, 'rajesh@digisol.com', 'DEVELOPER', 100000, 116) 
+into EMP values (105, 'Manish', 'MCA', 9000000013, 'manish@digisol.com', 'DEVELOPER', 100000, 116) 
+select * from dual;
+
+insert into EMP values (121, 'Mandar', 'BTECH', 9000000014, 'mandar@digisol.com', 'DEVELOPER', 250000, 101);
+
+3.1
+
+insert all 
+into SKILL values ('S1', 'Full Stack') 
+into SKILL values ('S2', 'Python') 
+into SKILL values ('S3', 'Java') 
+into SKILL values ('S4', 'C++') 
+into SKILL values ('S6', 'Oracle') 
+into SKILL values ('S7', 'Android') 
+into SKILL values ('S8', 'AZURE') 
+into SKILL values ('S9', 'DOT NET') 
+into SKILL values ('S10', 'IOS') 
+select * from dual;
+
+insert into SKILL values ('S11', 'WEBDEV');
+
+3.2
+
+insert all 
+into CLIENT values ('C1', 'ABC', '+48-1234123411', 'aaa@abc.com') 
+into CLIENT values ('C2', 'LTS', '+91-5678123411', 'bbb@lts.com') 
+into CLIENT values ('C3', 'RK', '+44-9876543211', 'ccc@rk.com') 
+into CLIENT values ('C4', 'MMA', '+31-1234123411', 'ddd@mma.com') 
+into CLIENT values ('C5', 'AKS', '+81-1231231211', 'eee@aks.com') 
+into CLIENT values ('C6', 'GKS', '+91-2342342311', 'fff@gks.com') 
+into CLIENT values ('C7', 'BAB', '+91-5677655611', 'ggg@bb.com') 
+into CLIENT values ('C8', 'ABT', '+48-4565456411', 'hhh@abt.com') 
+into CLIENT values ('C9', 'XYZ', '+48-1234567811', 'xyz@ab.com') 
+select * from dual;
+
+INSERT into CLIENT values ('C10', 'MAN', '+44-9540161282', 'man@gml.com');
+
+3.3
+
+insert all 
+into EMP_SKILL values (100, 'S1', 15) 
+into EMP_SKILL values (100, 'S3', 10) 
+into EMP_SKILL values (101, 'S1', 6) 
+into EMP_SKILL values (101, 'S2', 10) 
+into EMP_SKILL values (102, 'S4', 18) 
+into EMP_SKILL values (110, 'S1', 14) 
+into EMP_SKILL values (110, 'S6', 20) 
+into EMP_SKILL values (106, 'S2', 10) 
+into EMP_SKILL values (106, 'S6', 12) 
+into EMP_SKILL values (106, 'S8', 10) 
+into EMP_SKILL values (108, 'S9', 5) 
+into EMP_SKILL values (108, 'S6', 18) 
+into EMP_SKILL values (105, 'S7', 12) 
+into EMP_SKILL values (105, 'S10', 11) 
+select * from dual;
+
+insert into EMP_SKILL values (111, 'S2', 5);
+
+3.4
+
+insert all 
+into MEDICAL_POLICY values(100,'MED001',10000,to_date('10-12-2020','dd-mm-yyyy')) 
+into MEDICAL_POLICY values(101,'MED003',12000,to_date('15-12-2020','dd-mm-yyyy')) 
+into MEDICAL_POLICY values(100,'MED001',10000,to_date('10-01-2021','dd-mm-yyyy')) 
+into MEDICAL_POLICY values(101,'MED003',12000,to_date('15-01-2021','dd-mm-yyyy')) 
+into MEDICAL_POLICY values(106,'MED004',9000,to_date('21-01-2021','dd-mm-yyyy')) 
+select * from dual;
+
+insert into MEDICAL_POLICY values(121,'MED005',10000,'25-JAN-21');
+
+3.5
+
+insert all 
+into PRJ_DETAILS values ('P1','SPYDER', TO_DATE('10-01-2020', 'DD-MM-YYYY'),'11-OCT-2022', '11-OCT-2022', 102, 2000000, 19900000) 
+into PRJ_DETAILS values ('P2','APOLLO', TO_DATE('01-01-2019', 'DD-MM-YYYY'),'10-JUL-2021','30-DEC-2021', 108, 3000000, 36000000) 
+into PRJ_DETAILS values ('P3', 'UNICORN',TO_DATE('03-09-2021', 'DD-MM-YYYY'), '10-OCT-2023','11-OCT-2023', 106, 7500000, 80000000) 
+into PRJ_DETAILS values ('P4', 'ZEUS',TO_DATE('28-02-2020', 'DD-MM-YYYY'),'09-JUN-2021','10-JAN-2022', 110, 5500000, 50000000) 
+into PRJ_DETAILS values ('P5', 'JUPITOR',TO_DATE('07-08-2018', 'DD-MM-YYYY'),'04-FEB-2020','01-NOV-2020', 110, 9000000, 90000000) 
+into PRJ_DETAILS values ('P6','MARS', TO_DATE('21-02-2019', 'DD-MM-YYYY'),'07-AUG-2020','11-OCT-2020', 110, 2000000, 19900000) 
+into PRJ_DETAILS values ('P8', 'XXX',TO_DATE('10-01-2020', 'DD-MM-YYYY'),'11-OCT-2022','11-OCT-2022', 102, 2000000, 18900000) 
+into PRJ_DETAILS values ('P7','SATURN', TO_DATE('10-01-2020', 'DD-MM-YYYY'),'11-OCT-2022','11-OCT-2022', 120, 2000000, 17900000) 
+select * from dual;
+
+insert into PRJ_DETAILS values ('P9', 'NEPTUNE',TO_DATE('31-03-2022', 'DD-MM-YYYY'),'20-OCT-2022','26-DEC-2022', 102, 2000000, 19900000);
+
+3.6
+
+insert all 
+into family_dependents values(100,'AJITH','SON',12) 
+into family_dependents values(100,'PRITHVI','DAUGHTER',9) 
+into family_dependents values(101,'AARYA','DAUGHTER',17) 
+into family_dependents values(101,'AKANKSH','SON',11) 
+into family_dependents values(101,'ANKITHA','SPOUSE',43) 
+select * from dual;
+
+insert into FAMILY_DEPENDENTS values(100,'NAMAN','SON',19);
+
+3.7
+
+insert all 
+into pay_check values(100,to_date('01-12-2020','dd-mm-yyyy'),2000,null,null,null,2500,5000) 
+into pay_check values(101,to_date('01-12-2020','dd-mm-yyyy'),3000,null,null,null,5000,7000) 
+into pay_check values(102,to_date('01-12-2020','dd-mm-yyyy'),3000,null,null,null,3600,7000) 
+into pay_check values(100,to_date('01-12-2021','dd-mm-yyyy'),3000,null,null,null,450,4000) 
+into pay_check values(101,to_date('01-01-2021','dd-mm-yyyy'),5000,null,null,null,2100,4000) 
+into pay_check values(102,to_date('01-01-2021','dd-mm-yyyy'),5000,null,null,null,null,9000) 
+into pay_check values(106,to_date('02-01-2021','dd-mm-yyyy'),7000,null,null,null,900,3000) 
+select * from dual;
+
+insert into PAY_CHECK values(121,TO_DATE('03-01-2021','DD-MM-YYYY'),7000,NULL,NULL,NULL,4000,9000);
+
+3.8
+
+insert all 
+into WORK_EXP values (100, 'P1', 20, 'C1', 'A') 
+into WORK_EXP values (100, 'P3', 15, 'C3', 'A') 
+into WORK_EXP values (101, 'P1', 16, 'C1', 'A') 
+into WORK_EXP values (102, 'P2', 18, 'C2', 'B') 
+into WORK_EXP values (102, 'P1', 18, 'C1', 'A') 
+into WORK_EXP values (108, 'P2', 12, 'C2', 'C') 
+into WORK_EXP values (106, 'P3', 20, 'C3', 'C') 
+into WORK_EXP values (106, 'P4', 10, 'C4', 'C') 
+into WORK_EXP values (105, 'P2', 19, 'C2', 'B') 
+into WORK_EXP values (110, 'P4', 12, 'C4', 'B') 
+into WORK_EXP values (110, 'P5', 16, 'C8', 'A') 
+into WORK_EXP values (105, 'P5', 5, 'C5', 'C') 
+into WORK_EXP values (111, 'P5', 5, 'C5', 'C') 
+select * from dual;
+
+insert into WORK_EXP values (121, 'P5', 16, 'C8', 'A');
+
+3.9
+
+COMMIT;
+
+DELETE FROM EMP WHERE EMPCODE=100;
+
+ERROR at line 1:
+ORA-02292: integrity constraint (DSE103.SYS_C0076794) violated - child record
+found
+
+3.10
+
+UPDATE EMP SET EMAIL='rajesh@digital.com' WHERE EMPCODE=100
+
+ERROR at line 1:
+ORA-02290: check constraint (DSE103.EMAIL_DOMAIN) violated
+
+3.11
+
+UPDATE WORK_EXP SET PRJID='P9' WHERE EMPCODE=111;
+
+3.12
+
+COMMIT;
+
+DELETE FROM CLIENT WHERE CLIENTID='C1';
+
+3.13
+
+COMMIT;
+
+DELETE FROM FAMILY_DEPENDENTS WHERE EMPNO = 100;
+
+ROLLBACK;
+
+3.14
+
+UPDATE EMP SET SALARY = SALARY*1.01 WHERE DESIGNATION='DEVELOPER';
+
+3.15
+
+UPDATE EMP SET REPORTS_TO=106 WHERE EMPCODE=108;
+
+3.16
+
+UPDATE EMP SET REPORTS_TO=117 WHERE EMPCODE=108;
+
+ERROR at line 1:
+ORA-02291: integrity constraint (DSE103.FK_REPORTS_TO_EMPCODE) violated -
+parent key not found
+
